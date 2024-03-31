@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Continuous Thin Line Grid Pattern Background</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #111;
+  }
+  .pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), #00f, #000);
+    opacity: 0.5;
+    animation: animateLine 5s linear infinite;
+  }
+
+
+
+
+  .line:nth-child(1) {
+    left: 10%;
+  }
+  .line:nth-child(2) {
+    left: 20%;
+  }
+  .line:nth-child(3) {
+    left: 30%;
+  }
+  .line:nth-child(4) {
+    left: 40%;
+  }
+  .line:nth-child(5) {
+    left: 50%;
+  }
+  .line:nth-child(6) {
+    left: 60%;
+  }
+  .line:nth-child(7) {
+    left: 70%;
+  }
+  .line:nth-child(8) {
+    left: 80%;
+  }
+  .line:nth-child(9) {
+    left: 90%;
+  }
+  .line:nth-child(10) {
+    left: 100%;
+  }
+  @keyframes animateLine {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+  .title {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="pattern">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <div class="title">Welcome!</div>
+</body>
+</html>
