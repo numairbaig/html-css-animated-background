@@ -1,4 +1,4 @@
---Black Backgeound Blue pattern animated--
+--Black Background Blue pattern animated--
 
 -Languages: html css (basic)
 -Easily Customized
